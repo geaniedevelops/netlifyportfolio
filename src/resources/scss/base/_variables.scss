@@ -1,0 +1,28 @@
+// fonts
+$body-font: 'Raleway', sans-serif;
+$title-font: 'Roboto Slab', serif;
+
+// colors
+$white: #fff;
+$black: #000;
+
+// variables
+$bp-375: 'screen and (min-width: 375px)';
+$bp-480: 'screen and (min-width: 480px)';
+$bp-600: 'screen and (min-width: 600px)';
+$bp-768: 'screen and (min-width: 768px)';
+$bp-900: 'screen and (min-width: 900px)';
+$bp-1024: 'screen and (min-width: 1024px)';
+$bp-1360: 'screen and (min-width: 1360px)';
+$bp-1440: 'screen and (min-width: 1440px)';
+
+$max-480: 'screen and (max-width: 479px)';
+$max-600: 'screen and (max-width: 599px)';
+$max-768: 'screen and (max-width: 767px)';
+$max-900: 'screen and (max-width: 900px)';
+$max-1024: 'screen and (max-width: 1023px)';
+$max-1440: 'screen and (max-width: 1439px)';
+
+$only-600: 'screen and (min-width: 600px) and (max-width: 767px)';
+$only-768: 'screen and (min-width: 768px) and (max-width: 1023px)';
+$only-1024: 'screen and (min-width: 1024px) and (max-width: 1439px)';
