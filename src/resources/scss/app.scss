@@ -1,5 +1,4 @@
-@import './base';
-@import './pages/about.scss';
+@import './base/index.scss';
 
 body {
     width: 100%;
@@ -52,4 +51,15 @@ h4 {
 ul,
 p {
     margin: 0;
+}
+
+button,
+.button {
+    width: 100%;
+    background-color: $white;
+    border: 2px solid $black;
+    border-radius: 20px;
+    outline: none;
+    height: 2em;
+    font-weight: bold;
 }
