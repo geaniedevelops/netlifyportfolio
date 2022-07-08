@@ -1,8 +1,15 @@
 .header-nav {
     height: 4em;
-    background-color: $white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    background-color: $peach;
+    position: fixed;
+    width: 100%;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-family: $title-font;
+        height: 100%;
+    }
 }

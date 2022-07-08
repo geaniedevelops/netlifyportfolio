@@ -1,3 +1,9 @@
+import ForTheThrone from  './resources/images/forthethrone.png';
+import Streetscape from  './resources/images/streetscape.png';
+import WinOrDie from './resources/images/ywoyd.png';
+import UmbrellaWedding from './resources/images/umbrellawedding.png';
+import mobileRes from './resources/images/mobres.png';
+
 let projects = [
     {
         name: "Mobile Resume",
@@ -7,7 +13,7 @@ let projects = [
         key: 4,
         slug: "mobile-resume",
         date: "June 2019",
-        image: "https://github.com/geanieblanco/netlifyportfolio/blob/main/public/images/mobres.png"
+        image: mobileRes
     },
     {
         name: "For the Throne",
@@ -17,7 +23,7 @@ let projects = [
         key: 3,
         slug: "for-the-throne",
         date: "April 2019",
-        image: "/Users/geanie/Documents/Projects/netlifyportfolio/public/images/forthethrone.png"
+        image: ForTheThrone
     },
     {
         name: "Nitschke-Voijtek Wedding",
@@ -27,7 +33,7 @@ let projects = [
         key: 2,
         slug: "umbrella-wedding",
         date: "February 2019",
-        image: "public/images/umbrellawedding.png"
+        image: UmbrellaWedding
     },
     {
         name: "Streetscape",
@@ -37,7 +43,7 @@ let projects = [
         key: 1,
         slug: "streetscape",
         date: "February 2018",
-        image: "public/images/streetscape.png"
+        image: Streetscape
     },
     {
         name: "You Win or You Die",
@@ -47,7 +53,7 @@ let projects = [
         key: 0,
         slug: "you-win-or-die",
         date: "December 2017",
-        image: "public/images/ywoyd.png"
+        image: WinOrDie
     }
 ];
 

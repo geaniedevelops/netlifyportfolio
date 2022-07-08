@@ -1,0 +1,54 @@
+.header-nav {
+  height: 4em;
+  background-color: #f79d84;
+  position: fixed;
+  width: 100%;
+}
+.header-nav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  height: 100%;
+}
+
+.projects nav {
+  display: flex;
+  flex-direction: column;
+}
+.projects nav a {
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  display: none;
+}
+.projects nav a.active {
+  display: block;
+}
+.projects nav.active {
+  position: relative;
+  transition: position 2s;
+}
+.projects .project-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+.projects .project-detail-container {
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+}
+.projects .project-detail img {
+  border-radius: 8px 8px 0 0;
+  border-bottom: 0.25em solid black;
+}
+.projects .project-detail span {
+  padding: 1em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=projects.css.map */

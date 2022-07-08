@@ -1,0 +1,16 @@
+.header-nav {
+  height: 4em;
+  background-color: #f79d84;
+  position: fixed;
+  width: 100%;
+}
+.header-nav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  height: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

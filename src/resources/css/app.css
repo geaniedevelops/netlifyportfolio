@@ -1,10 +1,16 @@
 .header-nav {
   height: 4em;
-  background-color: #fff;
+  background-color: #f79d84;
+  position: fixed;
+  width: 100%;
+}
+.header-nav nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  font-family: "Roboto Slab", serif;
+  height: 100%;
 }
 
 body {
@@ -15,10 +21,22 @@ body {
 
 main {
   padding: 1em;
+  padding-top: 5em;
+}
+main > * {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
+}
+a:visited, a:active {
+  color: #000;
+}
+
+img {
+  max-width: 100%;
 }
 
 body,
@@ -69,4 +87,9 @@ button,
   outline: none;
   height: 2em;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/*# sourceMappingURL=app.css.map */

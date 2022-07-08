@@ -7,10 +7,10 @@ export default function Work() {
   return (
     <main className="work">
       <nav className="projects__nav js-project-nav">
-        {companies.map((company) => (
+        {companies.map((company, i) => (
           <Link
             to={`/work/${company.slug}`}
-            key={company.key}
+            key={i}
           >
             {company.companyName}
           </Link>
