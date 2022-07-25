@@ -1,31 +1,29 @@
 import { getProjects } from "../../data";
-import ProjectCard from "./project";
-import '../../resources/css/pages/projects.css';
+import ProjectCard from "./Project";
+import '../../resources/scss/pages/projects.scss';
+import '../../utils/show-more';
+import AppTemplate from "../AppTemplate";
 
 export default function Projects() {
   let projects = getProjects();
 
-  const demoLinkButton = (project) => {
-    if(project.demoLink) {
-      return (<a className="button" href={project.demoLink}>Demo</a>)
-    }
-  }
-
   return (
-    <main className="projects">
-      <div className="projects__all">
+    <AppTemplate pageName="projects">
+      <h1>Projects</h1>
+      <p>Work done for fun, practice, and experimenting.</p>
+      <section className="projects__all grid--responsive">
         {projects.map((project, i) => (
           <ProjectCard
             key={i}
             name={project.name}
             image={project.image}
             date={project.date}
-            descroption={project.description}
+            description={project.description}
             githubLink={project.githubLink}
             demoLink={project.demoLink}
           />
         ))}
-      </div>
-    </main>
+      </section>
+    </AppTemplate>
   );
 }

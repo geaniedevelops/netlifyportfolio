@@ -1,11 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
 import { getWork } from "../../data";
+import AppTemplate from "../AppTemplate";
 
 export default function Work() {
   let companies = getWork();
 
   return (
-    <main className="work">
+    <AppTemplate pageName="work">
       <nav className="projects__nav js-project-nav">
         {companies.map((company, i) => (
           <Link
@@ -17,6 +18,6 @@ export default function Work() {
         ))}
       </nav>
       <Outlet/>
-    </main>
+    </AppTemplate>
   );
 }

@@ -1,5 +1,87 @@
+@import '../base/index.scss';
+
 .about {
-    article {
+    section {
+        padding: 0.5em;
+    }
+
+    &__blurb {
+        border-bottom: 2px $red solid;
         margin-bottom: 1em;
+        padding-bottom: 0.5em;
+    }
+
+    &__resume {
+        article {
+            margin-bottom: 1em;
+
+            img {
+                width: 100%;
+                max-width: 450px;
+                border-radius: 8px;
+            }
+
+            &:nth-of-type(1) {
+                border-bottom: 2px $teal solid;
+
+                h3 {
+                    border-bottom: 0.25em $teal solid;
+                }
+            }
+
+            &:nth-of-type(2) {
+                border-bottom: 2px $denim solid;
+
+                h3 {
+                    border-bottom: 0.25em $denim solid;
+                }
+            }
+
+            &:nth-of-type(3) {
+                border-bottom: 2px $mustard solid;
+
+                h3 {
+                    border-bottom: 0.25em $mustard solid;
+                }
+            }
+
+            &:nth-of-type(4) {
+                border-bottom: 2px $orange solid;
+
+                h3 {
+                    border-bottom: 0.25em $orange solid;
+                }
+            }
+        }
+
+        @media #{$bp-768} {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+
+            article {
+                height: max-content;
+                width: max-content;
+
+                &.experience {
+                    grid-column: 1/ span 3;
+                    grid-row: 1;
+                }
+
+                &.awards {
+                    grid-column: 4/ span 3;
+                    grid-row: 1/ span 2;
+                }
+
+                &.education {
+                    grid-column: 1/ span 2;
+                    grid-row: 2;
+                }
+
+                &.skills {
+                    grid-column: 3/ span 1;
+                    grid-row: 2;
+                }
+            }
+        }
     }
 }

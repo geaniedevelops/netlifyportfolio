@@ -1,60 +1,60 @@
-import ForTheThrone from  './resources/images/forthethrone.png';
-import Streetscape from  './resources/images/streetscape.png';
-import WinOrDie from './resources/images/ywoyd.png';
-import UmbrellaWedding from './resources/images/umbrellawedding.png';
-import mobileRes from './resources/images/mobres.png';
+import * as Images from './resources/images/images';
 
 let projects = [
+    {
+        name: "You Win or You Die",
+        githubLink: "https://github.com/geanieblanco/YouWin-OrYouDie",
+        demoLink: "https://youwinoryoudie.netlify.app/",
+        description: "A simple JavaScript trivia game based on Game of Thrones (TV). UI and graphics by me. UPDATE: Refactored to Vue app July 2022.",
+        slug: "you-win-or-die",
+        date: "December 2017",
+        image: Images.WinOrDie
+    },
+    {
+        name: "Is Danny Stevens Dead Yet?",
+        githubLink: "https://github.com/geanieblanco/isdannystevensdeadyet",
+        demoLink: "https://isdannystevensdeadyet.netlify.app/",
+        description: "Firebase & React. All my homies hate Danny Stevens [NSFW - expletives]",
+        slug: "is-danny-stevens-dead",
+        date: "July 2022",
+        image: Images.WinOrDie
+    },
     {
         name: "Mobile Resume",
         githubLink: "https://www.geanieblanco.com/#",
         demoLink: "",
         description: "A React Native version of my online resume. Cross platform available.",
-        key: 4,
         slug: "mobile-resume",
         date: "June 2019",
-        image: mobileRes
+        image: Images.mobileRes
     },
     {
         name: "For the Throne",
         githubLink: "https://github.com/geanieblanco/ForTheThrone",
         demoLink: "https://geanieblanco.github.io/ForTheThrone/",
         description: "Platform for making guesses on who survives GoT.",
-        key: 3,
         slug: "for-the-throne",
         date: "April 2019",
-        image: ForTheThrone
+        image: Images.ForTheThrone
     },
     {
         name: "Nitschke-Voijtek Wedding",
         githubLink: "https://github.com/geanieblanco/UmbrellaWedding",
         demoLink: "https://geanieblanco.github.io/UmbrellaWedding/",
         description: "A custom wedding website built with basic HTML and CSS animations.",
-        key: 2,
         slug: "umbrella-wedding",
         date: "February 2019",
-        image: UmbrellaWedding
+        image: Images.UmbrellaWedding
     },
     {
         name: "Streetscape",
         githubLink: "https://github.com/geanieblanco/StreetscapeUIPublic",
         demoLink: "",
         description: "A React Native mobile app focused on pedestrian safety.",
-        key: 1,
         slug: "streetscape",
         date: "February 2018",
-        image: Streetscape
+        image: Images.Streetscape
     },
-    {
-        name: "You Win or You Die",
-        githubLink: "https://github.com/geanieblanco/YouWin-OrYouDie",
-        demoLink: "https://geanieblanco.github.io/YouWin-OrYouDie/",
-        description: "A simple JavaScript trivia game based on Game of Thrones (TV). UI and graphics by me.",
-        key: 0,
-        slug: "you-win-or-die",
-        date: "December 2017",
-        image: WinOrDie
-    }
 ];
 
 let work = [
@@ -84,7 +84,6 @@ let resume = [
                 endDate: "July 2022",
                 websiteLink: "https://www.puppyspot.com",
                 slug: "puppyspot",
-                key: 2,
             },
             {
                 companyName: "PuppySpot",
@@ -93,7 +92,6 @@ let resume = [
                 endDate: "March 2021",
                 websiteLink: "https://www.puppyspot.com",
                 slug: "puppyspot",
-                key: 1,
             },
             {
                 companyName: "PuppySpot",
@@ -102,7 +100,37 @@ let resume = [
                 endDate: "January 2020",
                 websiteLink: "https://www.puppyspot.com",
                 slug: "puppyspot",
-                key: 0,
+            },
+            {
+                companyName: "ClassPass",
+                position: "Data Entry Associate",
+                startDate: "May 2019",
+                endDate: "July 2019",
+                slug: "classpass",
+            },
+            {
+                companyName: "NYC Based Recruitment",
+                position: "Office Manager",
+                startDate: "August 2018",
+                endDate: "May 2019",
+                websiteLink: "",
+                slug: "recruitment",
+            },
+            {
+                companyName: "Vans",
+                position: "Visuals Associate",
+                startDate: "August 2017",
+                endDate: "September 2018",
+                websiteLink: "https://www.vans.com",
+                slug: "vans",
+            },
+            {
+                companyName: "A to Z Media",
+                position: "Jr. Production Manager",
+                startDate: "January 2016",
+                endDate: "November 2016",
+                websiteLink: "https://www.classpass.com",
+                slug: "classpass",
             }
         ]
     },
