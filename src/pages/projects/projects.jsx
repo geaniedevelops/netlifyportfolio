@@ -1,11 +1,11 @@
-import { getProjects } from "../../data";
-import ProjectCard from "./Project";
-import '../../resources/scss/pages/projects.scss';
-import '../../utils/show-more';
-import AppTemplate from "../AppTemplate";
+import { getProjects } from '../../data'
+import ProjectCard from './Project'
+import '../../resources/scss/pages/projects.scss'
+import '../../utils/show-more'
+import AppTemplate from '../AppTemplate'
 
 export default function Projects() {
-  let projects = getProjects();
+  let projects = getProjects()
 
   return (
     <AppTemplate pageName="projects">
@@ -25,5 +25,5 @@ export default function Projects() {
         ))}
       </section>
     </AppTemplate>
-  );
+  )
 }

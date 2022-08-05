@@ -1,12 +1,12 @@
-import Navigation from "../elements/Navigation";
+import Navigation from '../elements/Navigation'
+import Grid from './main/components/Grid'
 
-export default function AppTemplate(props){
-    return (
-        <main className={props.pageName}>
-            <header>
-                <Navigation />
-            </header>
-            {props.children}
-        </main>
-    );
+export default function AppTemplate(props) {
+  return (
+    <main className={props.pageName}>
+      {props.children}
+      <Navigation />
+      <Grid />
+    </main>
+  )
 }

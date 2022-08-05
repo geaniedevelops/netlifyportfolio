@@ -1,61 +1,61 @@
 @import '../base/index.scss';
 
 .projects {
-    &__all {
-        margin-top: 1em;
+  &__all {
+    margin-top: 1em;
+  }
+
+  .project-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.25em;
+    margin-bottom: 1.5em;
+
+    &:nth-of-type(1n) {
+      border-bottom: 2px $teal solid;
+
+      h3 {
+        border-bottom: 0.25em $teal solid;
+      }
     }
 
-    .project-detail {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 0.25em;
-        margin-bottom: 1.5em;
+    &:nth-of-type(2n) {
+      border-bottom: 2px $denim solid;
 
-        &:nth-of-type(1n) {
-            border-bottom: 2px $teal solid;
-
-            h3 {
-                border-bottom: 0.25em $teal solid;
-            }
-        }
-
-        &:nth-of-type(2n) {
-            border-bottom: 2px $denim solid;
-
-            h3 {
-                border-bottom: 0.25em $denim solid;
-            }
-        }
-
-        &:nth-of-type(3n) {
-            border-bottom: 2px $mustard solid;
-
-            h3 {
-                border-bottom: 0.25em $mustard solid;
-            }
-        }
-
-        &__ctas {
-            a {
-                margin-bottom: 0.25em;
-            }
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        p.date {
-            font-size: 14px;
-        }
-
-        img {
-            border-radius: 8px 8px 0 0;
-        }
-
-        span {
-            text-align: center;
-        }
+      h3 {
+        border-bottom: 0.25em $denim solid;
+      }
     }
+
+    &:nth-of-type(3n) {
+      border-bottom: 2px $mustard solid;
+
+      h3 {
+        border-bottom: 0.25em $mustard solid;
+      }
+    }
+
+    &__ctas {
+      a {
+        margin-bottom: 0.25em;
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    p.date {
+      font-size: 14px;
+    }
+
+    img {
+      border-radius: 8px 8px 0 0;
+    }
+
+    span {
+      text-align: center;
+    }
+  }
 }

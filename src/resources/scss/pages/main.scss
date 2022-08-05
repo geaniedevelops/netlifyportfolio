@@ -1,67 +1,19 @@
-.main {
-    margin-top: 4em;
+@import '../elements/grid';
 
-    .construction-banner {
-        position: absolute;
-        width: 100%;
-        background-color: rosybrown;
-        top: 0;
+.homepage {
+  &-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
 
-        p {
-            display: flex;
-            flex-direction: column;
-            padding: 0 1em;
-        }
+    &_background {
+      position: absolute;
+      z-index: -1;
+      width: 65%;
+      max-width: 20em;
     }
-
-    section {
-        height: max-content;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1em;
-
-        > div {
-            padding: 0 1em;
-            max-width: 1200px;
-        }
-
-        ul {
-            padding: 0;
-            list-style-type: none;
-        }
-
-        .button {
-            max-width: max-content;
-            padding: 0 1em;
-        }
-    }
-
-    .work {
-        &-content {
-            .projects {
-                border-bottom: 1px dotted black;
-                margin-bottom: 0.5em;
-
-                .ctas {
-                    display: flex;
-
-                    :first-child {
-                        margin-right: 0.5em;
-                    }
-                }
-            }
-        }
-
-        @media screen and (min-width: 600px) {
-            .project-list {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-column-gap: 0.25em;
-            }
-
-            .projects {
-                border-bottom: none;
-            }
-        }
-    }
+  }
 }

@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.80c22f33.css",
-    "main.js": "/static/js/main.340c58b9.js",
+    "main.css": "/static/css/main.ed20dca8.css",
+    "main.js": "/static/js/main.0437f036.js",
+    "static/media/hackchella.jpeg": "/static/media/hackchella.dae021f923661778d940.jpeg",
+    "static/media/streetscape.png": "/static/media/streetscape.d138e860ae8a490afa2c.png",
+    "static/media/forthethrone.png": "/static/media/forthethrone.9a31d5eb56b6b1e592bd.png",
+    "static/media/StickyPops.otf": "/static/media/StickyPops.1127533b89ba0dbca8d8.otf",
+    "static/media/umbrellawedding.png": "/static/media/umbrellawedding.b25e6bdee75d00fba353.png",
+    "static/media/mobres.png": "/static/media/mobres.508860950ff7f464c7d3.png",
+    "static/media/ywoyd.png": "/static/media/ywoyd.a79f0027cfd9edbfae3a.png",
+    "static/media/shapes.svg": "/static/media/shapes.8526569c0fc16667443e4b55be02dbca.svg",
     "index.html": "/index.html",
-    "main.80c22f33.css.map": "/static/css/main.80c22f33.css.map",
-    "main.340c58b9.js.map": "/static/js/main.340c58b9.js.map"
+    "main.ed20dca8.css.map": "/static/css/main.ed20dca8.css.map",
+    "main.0437f036.js.map": "/static/js/main.0437f036.js.map"
   },
   "entrypoints": [
-    "static/css/main.80c22f33.css",
-    "static/js/main.340c58b9.js"
+    "static/css/main.ed20dca8.css",
+    "static/js/main.0437f036.js"
   ]
 }

@@ -1,10 +1,15 @@
-import React from 'react';
-import AppTemplate from './pages/AppTemplate';
-import './resources/scss/app.scss';
-
+import React from 'react'
+import { Outlet, useParams } from 'react-router-dom'
+import AppTemplate from './pages/AppTemplate'
+import './resources/scss/app.scss'
 
 export default function App() {
+  let params = useParams()
+  console.log(params)
+
   return (
-    <AppTemplate/>
-  );
+    <AppTemplate pageName="">
+      <Outlet />
+    </AppTemplate>
+  )
 }

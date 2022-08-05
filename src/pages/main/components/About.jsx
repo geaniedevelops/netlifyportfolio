@@ -11,6 +11,14 @@ export default function About() {
         <h2>A bit about me...</h2>
         <p>
           I enjoy creating beautiful and accessible user experiences for product and e-commerce.
+          <a
+            href="https://drive.google.com/file/d/1QVle4JwI-Kj5hS5gMOi4ptpSKgma8h0p/view?usp=sharing"
+            rel="noreferrer"
+            target="_blank"
+            className='button'
+          >
+            Download my resume
+          </a>
         </p>
         <div>
           {resume[0].experience.map((position, i) => (
@@ -25,14 +33,6 @@ export default function About() {
                 </p>
             </div>
           ))}
-          <a
-            href="https://drive.google.com/file/d/1QVle4JwI-Kj5hS5gMOi4ptpSKgma8h0p/view?usp=sharing"
-            rel="noreferrer"
-            target="_blank"
-            className='button'
-          >
-            Download my resume
-          </a>
         </div>
       </div>
     </section>

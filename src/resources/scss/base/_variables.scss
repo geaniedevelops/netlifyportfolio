@@ -1,6 +1,12 @@
 // fonts
+
+@font-face {
+  font-family: 'StickyPops';
+  src: local('StickyPops'), url('../../fonts/StickyPops.otf') format('opentype');
+}
+
 $body-font: 'Raleway', sans-serif;
-$title-font: 'Roboto Slab', serif;
+$title-font: 'StickyPops';
 
 // colors
 $white: #fff9f2;

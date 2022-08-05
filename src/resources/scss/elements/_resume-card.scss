@@ -1,16 +1,16 @@
 .resume-card {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 
-    h4 {
-        display: flex;
-        flex-direction: column;
+  h4 {
+    display: flex;
+    flex-direction: column;
 
-        @media #{$bp-375} {
-            flex-direction: row;
+    @media #{$bp-375} {
+      flex-direction: row;
 
-            span {
-                margin-left: 0.25em;
-            }
-        }
+      span {
+        margin-left: 0.25em;
+      }
     }
+  }
 }

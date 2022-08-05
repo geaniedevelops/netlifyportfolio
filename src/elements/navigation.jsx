@@ -1,15 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
+import '../resources/scss/elements/_navigation.scss'
 
-export default function Navigation(){
-    return (
-        <div className="header-nav">
-            <nav className="main-content">
-                <Link to="/">LOGO</Link>
-                <Link to="/about">About</Link>
-                <Link to="/work">Work</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
-            </nav>
-        </div>
-    )
+export default function Navigation() {
+  return (
+    <div className="main-nav">
+      <nav className="main-content">
+        <Link to="/welcome">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/work">Work</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+      </nav>
+    </div>
+  )
 }
