@@ -1,4 +1,4 @@
-import * as Images from './resources/images/images'
+import * as Images from '../resources/images/about/images'
 
 let projects = [
   {
@@ -29,7 +29,7 @@ let projects = [
       'A React Native version of my online resume. Cross platform available.',
     slug: 'mobile-resume',
     date: 'June 2019',
-    image: Images.mobileRes,
+    image: Images.MobileRes,
   },
   {
     name: 'For the Throne',
@@ -80,7 +80,8 @@ let contactInfo = [
 
 let resume = [
   {
-    experience: [
+    name: 'Experience',
+    items: [
       {
         companyName: 'PuppySpot',
         position: 'Frontend Developer',
@@ -139,7 +140,8 @@ let resume = [
     ],
   },
   {
-    awards: [
+    name: 'Awards',
+    items: [
       {
         awardName: 'Best Overall Hack',
         event: 'Hackchella',
@@ -155,7 +157,8 @@ let resume = [
     ],
   },
   {
-    education: [
+    name: 'Education',
+    items: [
       {
         schoolName: 'Rutgers University',
         startDate: 'August 2017',
@@ -180,7 +183,8 @@ let resume = [
     ],
   },
   {
-    skills: ['HTML5', 'CSS3', 'JavaScript', 'PHP Laravel', 'SASS', 'Agile'],
+    name: 'Skills',
+    items: ['HTML5', 'CSS3', 'JavaScript', 'PHP Laravel', 'SASS', 'Agile'],
   },
 ]
 
@@ -206,4 +210,15 @@ export function getWorkBySlug(slug) {
 
 export function getResume() {
   return resume
+}
+
+export function getResumeSectionByName(name) {
+  let items
+  resume.forEach((section) => {
+    if (section.name.toLowerCase() === name) {
+      items = section.items
+    }
+  })
+
+  return items
 }

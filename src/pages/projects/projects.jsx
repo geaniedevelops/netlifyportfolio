@@ -1,29 +1,34 @@
-import { getProjects } from '../../data'
-import ProjectCard from './Project'
+import { Link, useParams } from 'react-router-dom'
+import { getProjects } from '../../data/data'
+import { Window } from '../../elements'
 import '../../resources/scss/pages/projects.scss'
 import '../../utils/show-more'
-import AppTemplate from '../AppTemplate'
+import ProjectCard from './ProjectCard'
 
 export default function Projects() {
   let projects = getProjects()
+  let params = useParams()
+
+  function buildUrl(slug) {
+    return `/projects/${slug.toLowerCase()}`
+  }
 
   return (
-    <AppTemplate pageName="projects">
-      <h1>Projects</h1>
-      <p>Work done for fun, practice, and experimenting.</p>
-      <section className="projects__all grid--responsive">
-        {projects.map((project, i) => (
-          <ProjectCard
-            key={i}
-            name={project.name}
-            image={project.image}
-            date={project.date}
-            description={project.description}
-            githubLink={project.githubLink}
-            demoLink={project.demoLink}
-          />
-        ))}
+    <Window barTitle="Projects">
+      <section className="project-content">
+        {!params.slug ? (
+          <>
+            <p>Work done for fun, practice, and experimenting.</p>
+            {projects.map((project, i) => (
+              <Link to={buildUrl(project.slug)} key={i}>
+                <h3>{project.name}</h3>
+              </Link>
+            ))}
+          </>
+        ) : (
+          <ProjectCard />
+        )}
       </section>
-    </AppTemplate>
+    </Window>
   )
 }

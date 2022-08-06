@@ -1,12 +1,12 @@
 import React from 'react'
-import Window from './components/Window'
+import { Window } from '../../elements/index'
 import { Shapes } from '../../resources/images/home'
 import '../../resources/scss/pages/main.scss'
 
 export default function Main() {
   return (
     <section className="homepage">
-      <Window>
+      <Window barTitle="Welcome">
         <article className="homepage-content">
           <h1>Geanie Blanco</h1>
           <h2>Frontend & Product Developer</h2>

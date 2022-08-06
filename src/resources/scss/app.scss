@@ -15,51 +15,13 @@ body {
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-
-  &:visited,
-  &:active {
-    color: $black;
-  }
-}
-
 img {
   max-width: 100%;
 }
 
-body,
-p {
-  font-family: $body-font;
-  font-size: 1rem;
-}
-
-p {
-  line-height: 1.5;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.75em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-h4 {
-  font-size: 1.25em;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: $title-font;
-  margin: 0;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 ul,
@@ -67,31 +29,8 @@ p {
   margin: 0;
 }
 
-button,
-.button {
-  width: 100%;
-  border: 2px solid $black;
-  border-radius: 20px;
-  outline: none;
-  height: 2em;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5em;
-  color: $black;
-
-  &:hover {
-    opacity: 0.5;
-  }
-}
-
-.grid--responsive {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
-  grid-gap: 1rem;
-
-  @media #{$bp-768} {
-    grid-template-columns: repeat(auto-fill, minmax(min(12rem, 100%), 1fr));
-  }
+button {
+  border: none;
+  background: none;
+  padding: initial;
 }

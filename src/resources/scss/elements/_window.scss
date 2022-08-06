@@ -1,3 +1,5 @@
+@import '../base/index.scss';
+
 .window {
   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf,
     inset -2px -2px grey, inset 2px 2px #fff;
@@ -12,6 +14,10 @@
   z-index: 1;
   margin-top: 4.5em;
 
+  @media #{$bp-1024} {
+    max-width: max-content;
+  }
+
   &__bar {
     background: #deb6f6;
     background: linear-gradient(1deg, #deb6f6 0%, #8dcffc 100%);
@@ -25,17 +31,38 @@
     justify-content: space-between;
     padding-left: 5px;
 
+    &-text p {
+      font-family: $title-font;
+    }
+
     &-icons {
       display: flex;
       flex-direction: row;
       padding: 3px;
 
-      .box {
+      div {
         background-color: lightgray;
         width: 1.25em;
         margin-left: 3px;
         box-shadow: inset 1px 1px #fff, inset -1px -1px grey,
           inset 2px 2px #dfdfdf;
+        background-repeat: no-repeat;
+
+        &.min {
+          background-image: url('../../images/icons/min.svg');
+          background-position: 4px 13px;
+          background-size: 11px 1.5px;
+        }
+
+        &.max {
+          background-image: url('../../images/icons/max.svg');
+          background-position: center;
+        }
+
+        &.close {
+          background-image: url('../../images/icons/close.svg');
+          background-position: center;
+        }
       }
     }
   }
@@ -56,5 +83,23 @@
     margin: 0 auto;
     overflow-y: scroll;
     border: 0.5px solid lightgray;
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #dfdfdf;
+      box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
+        inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    }
+
+    ::-webkit-scrollbar-corner {
+      background: #dfdfdf;
+    }
+
+    ::-webkit-scrollbar {
+      width: 16px;
+    }
+
+    @media #{$bp-600} {
+      height: max-content;
+    }
   }
 }

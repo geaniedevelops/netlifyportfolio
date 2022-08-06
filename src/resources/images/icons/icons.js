@@ -1,5 +1,5 @@
-import Close from './close.png'
-import Max from './max.png'
-import Min from './min.png'
+import Close from './close.svg'
+import Max from './max.svg'
+import Min from './min.svg'
 
 export { Close, Max, Min }
