@@ -22,7 +22,7 @@ export default function About() {
 
   return (
     <Window barTitle={params.slug ? params.slug.toUpperCase() : 'About Me'}>
-      {renderAboutSection()}
+      <section className="about-content">{renderAboutSection()}</section>
     </Window>
   )
 }

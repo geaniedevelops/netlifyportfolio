@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.ed20dca8.css",
-    "main.js": "/static/js/main.0437f036.js",
+    "main.css": "/static/css/main.1071a551.css",
+    "main.js": "/static/js/main.917e4390.js",
+    "static/media/about.jpg": "/static/media/about.ef8dfcb2c2423eec8caf.jpg",
     "static/media/hackchella.jpeg": "/static/media/hackchella.dae021f923661778d940.jpeg",
     "static/media/streetscape.png": "/static/media/streetscape.d138e860ae8a490afa2c.png",
     "static/media/forthethrone.png": "/static/media/forthethrone.9a31d5eb56b6b1e592bd.png",
     "static/media/StickyPops.otf": "/static/media/StickyPops.1127533b89ba0dbca8d8.otf",
+    "static/media/Pixel.ttf": "/static/media/Pixel.d1043a8dc9f19e33c88b.ttf",
     "static/media/umbrellawedding.png": "/static/media/umbrellawedding.b25e6bdee75d00fba353.png",
     "static/media/mobres.png": "/static/media/mobres.508860950ff7f464c7d3.png",
     "static/media/ywoyd.png": "/static/media/ywoyd.a79f0027cfd9edbfae3a.png",
+    "static/media/PixelCondensed.ttf": "/static/media/PixelCondensed.8c2aa077fd64bbd5eea3.ttf",
     "static/media/shapes.svg": "/static/media/shapes.8526569c0fc16667443e4b55be02dbca.svg",
     "index.html": "/index.html",
-    "main.ed20dca8.css.map": "/static/css/main.ed20dca8.css.map",
-    "main.0437f036.js.map": "/static/js/main.0437f036.js.map"
+    "static/media/close.svg": "/static/media/close.289bc5a2b68aabcfd188.svg",
+    "static/media/max.svg": "/static/media/max.871ca88498f07577965e.svg",
+    "static/media/min.svg": "/static/media/min.3488513f98aceb8589e2.svg",
+    "main.1071a551.css.map": "/static/css/main.1071a551.css.map",
+    "main.917e4390.js.map": "/static/js/main.917e4390.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed20dca8.css",
-    "static/js/main.0437f036.js"
+    "static/css/main.1071a551.css",
+    "static/js/main.917e4390.js"
   ]
 }

@@ -1,0 +1,34 @@
+@import '../base/index.scss';
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 80%;
+  }
+
+  .ctas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    a:first-of-type {
+      background-color: #e9d5f7;
+      max-width: fit-content;
+      padding: 8px 25px;
+      border-radius: 20px;
+      border: 4px dashed #cbffcb;
+      margin-right: 0.5em;
+    }
+
+    a:last-of-type {
+      background-color: #cbffcb;
+      max-width: fit-content;
+      padding: 8px 25px;
+      border-radius: 20px;
+      border: 4px dashed #e9d5f7;
+    }
+  }
+}

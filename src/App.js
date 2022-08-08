@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { Clock, Grid, MainNavigation, OptionsBar } from './elements'
+import Main from './pages/main/Main'
 import './resources/scss/app.scss'
 
 export default function App() {
@@ -15,19 +16,19 @@ export default function App() {
     if (location.pathname.includes('welcome')) pageName = 'homepage'
     return pageName
   }
+
   return (
     <>
       <header>
         <OptionsBar type={getPageName()} />
       </header>
       <main className={getPageName()}>
-        <Outlet />
+        {getPageName() ? <Outlet /> : <Main />}
       </main>
       <footer>
         <MainNavigation active={getPageName()} />
       </footer>
       <Grid />
-      <Clock />
     </>
   )
 }

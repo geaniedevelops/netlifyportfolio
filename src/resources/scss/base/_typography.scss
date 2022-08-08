@@ -6,10 +6,15 @@ p {
 a {
   text-decoration: none;
   font-family: $body-font;
+  color: black;
 
   &:visited,
   &:active {
     color: $black;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 }
 

@@ -7,7 +7,7 @@ export default function Skills() {
   let skills = getResumeSectionByName(params.slug)
 
   return (
-    <article className="about-content skills">
+    <>
       <h3>Skills</h3>
       <ul>
         {skills.map((skill, i) => (
@@ -16,6 +16,6 @@ export default function Skills() {
           </li>
         ))}
       </ul>
-    </article>
+    </>
   )
 }

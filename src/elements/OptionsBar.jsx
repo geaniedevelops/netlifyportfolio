@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getProjects, getResume } from '../data/data'
 import '../resources/scss/elements/_options-bar.scss'
 
 export default function OptionsBar(props) {
   const pageType = props.type
+  const [optionNavVisible, setOptionNavVisible] = useState(false)
+  const [viewNavVisible, setViewNavVisible] = useState(false)
 
   function buildUrl(slug) {
     return `/${pageType}/${slug.toLowerCase()}`
@@ -28,14 +30,31 @@ export default function OptionsBar(props) {
         </li>
       ))
     }
-    return <ul className="submenu hidden js-view-menu">{links}</ul>
+    return (
+      <ul
+        className="submenu js-view-menu"
+        isvisible={viewNavVisible ? 'true' : 'false'}
+      >
+        {links}
+      </ul>
+    )
   }
 
-  const handleMenuTrigger = (e) => {
-    e.preventDefault()
-    const submenu = document.querySelector(`.${e.target.dataset.target}`)
-    if (submenu.classList.contains('hidden')) {
-      submenu.classList.remove('hidden')
+  const handleMenuClick = (trigger) => {
+    if (trigger.dataset.target === 'options') {
+      if (optionNavVisible) setOptionNavVisible(false)
+      else {
+        setOptionNavVisible(true)
+        setViewNavVisible(false)
+      }
+    }
+
+    if (trigger.dataset.target === 'view') {
+      if (viewNavVisible) setViewNavVisible(false)
+      else {
+        setViewNavVisible(true)
+        setOptionNavVisible(false)
+      }
     }
   }
 
@@ -46,14 +65,17 @@ export default function OptionsBar(props) {
           <li>
             <button
               className="js-options-trigger"
-              onClick={handleMenuTrigger}
-              data-target="js-options-menu"
+              onClick={(e) => handleMenuClick(e.target)}
+              data-target="options"
             >
               <span>O</span>ptions
             </button>
           </li>
           <li>
-            <ul className="submenu hidden js-options-menu">
+            <ul
+              className="submenu hidden js-options-menu"
+              isvisible={optionNavVisible ? 'true' : 'false'}
+            >
               <li>
                 <p className="js-darkmode">Dark Mode</p>
               </li>
@@ -69,8 +91,8 @@ export default function OptionsBar(props) {
           <li>
             <button
               className="js-view-trigger"
-              onClick={handleMenuTrigger}
-              data-target="js-view-menu"
+              onClick={(e) => handleMenuClick(e.target)}
+              data-target="view"
             >
               <span>V</span>iew
             </button>

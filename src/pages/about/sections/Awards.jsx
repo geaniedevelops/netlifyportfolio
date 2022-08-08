@@ -8,14 +8,14 @@ export default function Awards() {
 
   const showAwardList = () => {
     return awards.map((award, i) => (
-      <div className="resume-card" key={i}>
+      <article key={i}>
         <h4>{award.awardName}</h4>
         <p className="resume-card__dates">
           {award.event}, {award.date}
         </p>
-      </div>
+      </article>
     ))
   }
 
-  return <article className="about-content awards">{showAwardList()}</article>
+  return showAwardList()
 }

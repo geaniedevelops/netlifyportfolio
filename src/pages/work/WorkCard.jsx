@@ -3,27 +3,25 @@ import { getWorkBySlug } from '../../data/data'
 
 export default function WorkCard() {
   let params = useParams()
-  let example = getWorkBySlug(params.slug)
+  let work = getWorkBySlug(params.slug)
 
   return (
-    <section className="example">
-      <article className="example-detail">
-        <h2>{example.companyName}</h2>
-        <img src={example.image} alt="" />
-        <p>
-          <span>Created: </span>
-          {example.date}
-        </p>
-        <p>{example.description}</p>
-        <div className="example-detail__ctas">
-          <a className="button" href={example.githubLink}>
-            Github
-          </a>
-          <a className="button" href={example.demoLink}>
-            Demo
-          </a>
-        </div>
-      </article>
-    </section>
+    <article className="work-detail">
+      <h3>{work.companyName}</h3>
+      <img src={work.image} alt="" />
+      <p>
+        <span>Created: </span>
+        {work.date}
+      </p>
+      <p>{work.description}</p>
+      <div className="work-detail__ctas">
+        <a className="button" href={work.githubLink}>
+          Github
+        </a>
+        <a className="button" href={work.demoLink}>
+          Demo
+        </a>
+      </div>
+    </article>
   )
 }

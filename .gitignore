@@ -203,3 +203,6 @@ sketch
 # End of https://www.toptal.com/developers/gitignore/api/sass,node,git,react
 # Local Netlify folder
 .netlify
+
+
+/build

@@ -16,7 +16,9 @@ export default function Projects() {
   return (
     <Window barTitle="Projects">
       <section className="project-content">
-        {!params.slug ? (
+        {params.slug ? (
+          <ProjectCard projectSlug={params.slug} />
+        ) : (
           <>
             <p>Work done for fun, practice, and experimenting.</p>
             {projects.map((project, i) => (
@@ -25,8 +27,6 @@ export default function Projects() {
               </Link>
             ))}
           </>
-        ) : (
-          <ProjectCard />
         )}
       </section>
     </Window>

@@ -20,7 +20,7 @@ export default function Experience() {
   }
 
   return (
-    <section className="experience about-content">
+    <>
       {showExperienceList()}
       <button
         href="https://drive.google.com/file/d/1QVle4JwI-Kj5hS5gMOi4ptpSKgma8h0p/view?usp=sharing"
@@ -29,6 +29,6 @@ export default function Experience() {
       >
         download my resume.
       </button>
-    </section>
+    </>
   )
 }

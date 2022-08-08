@@ -1,7 +1,8 @@
-import { Outlet, Link, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { getWork } from '../../data/data'
 import { Window } from '../../elements'
 import WorkCard from './WorkCard'
+import '../../resources/scss/pages/work.scss'
 
 export default function Work() {
   let companies = getWork()
@@ -12,8 +13,8 @@ export default function Work() {
   }
   return (
     <Window barTitle="work">
-      {!params.slug ? (
-        <>
+      <section className="work-content">
+        {!params.slug ? (
           <ul className="projects__nav js-project-nav">
             {companies.map((company, i) => (
               <li key={i}>
@@ -21,10 +22,10 @@ export default function Work() {
               </li>
             ))}
           </ul>
-        </>
-      ) : (
-        <WorkCard />
-      )}
+        ) : (
+          <WorkCard />
+        )}
+      </section>
     </Window>
   )
 }
